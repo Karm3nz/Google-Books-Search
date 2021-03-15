@@ -14,26 +14,10 @@ So that I can get a list of book results returned from a book query search.
 I want to be able to be able to save books
 So that I can see a list of books I have saved from my book searches.
 ````
-https://karm3nz.github.io/Google-Books-Search/ 
+https://google-books-searcher-react.herokuapp.com/ 
 
 ![Google Book Search Screenshot](client/src/utils/assets/bookSearch.png)
 ![Google Book Search Screenshot](client/src/utils/assets/bookSaved.png)
-
-## Table of Contents 📜
-
-* [Installation](#installation)
-* [License](#license)
-
-## Installation 
-💾
-
-### Steps:
-
-1) Make sure to have properly functioning computer.
-2) Check if an internet browswer is installed. If so, go to step 4).
-3) Install an internet browser of your choice. 
-4) Open up internet web browser.
-5) In the address bar, type in : https://karm3nz.github.io/Google-Books-Search/  and hit "enter" on the keyboard.
 
 ## License 
 🛡️
