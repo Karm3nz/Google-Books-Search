@@ -1,22 +1,25 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Books from "./pages/Books";
-import Detail from "./pages/Detail";
+import Nav from "../src/components/Nav";
+import Jumbotron from "../src/components/Jumbotron";
+import Search from "./pages/Search";
+import Saved from "./pages/Saved";
 import NoMatch from "./pages/NoMatch";
-import Nav from "./components/Nav";
+
 
 function App() {
   return (
     <Router>
       <div>
         <Nav />
-        {/* "switch" tags acts as switch case statements for the routes... whether it's books, details, or no match */}
+        <Jumbotron />
+        {/* "switch" tags acts as switch case statements for the routes... whether it's search, saved, or no match */}
         <Switch>
-          <Route exact path={["/", "/books"]}>
-            <Books />
+          <Route exact path={["/", "/search"]} component={Search}>
+            <Search />
           </Route>
-          <Route exact path="/books/:id">
-            <Detail />
+          <Route exact path="/saved"component={Saved}>
+            <Saved />
           </Route>
           <Route>
             <NoMatch />

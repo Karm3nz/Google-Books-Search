@@ -1,13 +1,30 @@
-import React from "react";
+import React from 'react';
+import {Link} from "react-router-dom";
+import "./style.css";
+
 
 function Nav() {
+
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
-      <a className="navbar-brand" href="/">
-        React Reading List
-      </a>
+    <div>
+      <nav className="navbar navbar-expand-lg navbar-dark">
+        <Link className="navbar-brand nav" to="/">Google Books</Link>
+        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav">
+            <li className="nav-item active">
+              <Link className="nav-link" to="/">Search<span className="sr-only"></span></Link>
+            </li>
+            <li className="nav-item active">
+              <Link className="nav-link" to="/saved">Saved</Link>
+            </li>
+          </ul>
+        </div>
     </nav>
-  );
+    </div>    
+  )
 }
 
 export default Nav;
